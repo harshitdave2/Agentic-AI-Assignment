@@ -1,0 +1,6 @@
+streamlit>=1.35.0
+pytest>=8.0.0
+
+# Optional — required only when LLM_PROVIDER=gemini
+# Install with:  pip install google-generativeai
+google-generativeai>=0.7.0

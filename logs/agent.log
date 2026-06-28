@@ -1,0 +1,1371 @@
+2026-06-24 16:36:39,111 | INFO     | agent.core | [AGENT] Question received: 'Where is order ORD-1002?'
+2026-06-24 16:36:39,111 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1002', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,111 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1002')
+2026-06-24 16:36:39,112 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1002 | Status: In Transit
+2026-06-24 16:36:39,112 | INFO     | agent.core | [AGENT] Response generated (254 chars)
+2026-06-24 16:36:39,112 | INFO     | agent.core | [AGENT] Question received: 'Get details for PROD-201'
+2026-06-24 16:36:39,112 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': 'PROD-201', 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,112 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-201')
+2026-06-24 16:36:39,140 | INFO     | agent.core | [AGENT] Response generated (204 chars)
+2026-06-24 16:36:39,140 | INFO     | agent.core | [AGENT] Question received: 'Show me running shoes'
+2026-06-24 16:36:39,141 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'running shoes'}
+2026-06-24 16:36:39,141 | INFO     | agent.tools | [TOOL CALL] search_products(query='running shoes')
+2026-06-24 16:36:39,141 | INFO     | agent.tools | [TOOL RESULT] Found 3 product(s) for query 'running shoes'
+2026-06-24 16:36:39,141 | INFO     | agent.core | [AGENT] Response generated (488 chars)
+2026-06-24 16:36:39,141 | INFO     | agent.core | [AGENT] Question received: 'Where is order ORD-1002?'
+2026-06-24 16:36:39,142 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1002', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,142 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1002')
+2026-06-24 16:36:39,142 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1002 | Status: In Transit
+2026-06-24 16:36:39,142 | INFO     | agent.core | [AGENT] Response generated (254 chars)
+2026-06-24 16:36:39,142 | INFO     | agent.core | [AGENT] Question received: 'Where is order ORD-9999?'
+2026-06-24 16:36:39,142 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-9999', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,142 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-9999')
+2026-06-24 16:36:39,142 | WARNING  | agent.tools | [TOOL RESULT] Order 'ORD-9999' not found.
+2026-06-24 16:36:39,142 | INFO     | agent.core | [AGENT] Response generated (234 chars)
+2026-06-24 16:36:39,143 | INFO     | agent.core | [AGENT] Question received: 'Get details for PROD-201'
+2026-06-24 16:36:39,143 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': 'PROD-201', 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,143 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-201')
+2026-06-24 16:36:39,144 | INFO     | agent.core | [AGENT] Response generated (204 chars)
+2026-06-24 16:36:39,144 | INFO     | agent.core | [AGENT] Question received: 'Find running shoes'
+2026-06-24 16:36:39,144 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'running shoes'}
+2026-06-24 16:36:39,144 | INFO     | agent.tools | [TOOL CALL] search_products(query='running shoes')
+2026-06-24 16:36:39,144 | INFO     | agent.tools | [TOOL RESULT] Found 3 product(s) for query 'running shoes'
+2026-06-24 16:36:39,145 | INFO     | agent.core | [AGENT] Response generated (488 chars)
+2026-06-24 16:36:39,145 | INFO     | agent.core | [AGENT] Question received: 'Find affordable running shoes'
+2026-06-24 16:36:39,145 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'running shoes'}
+2026-06-24 16:36:39,145 | INFO     | agent.tools | [TOOL CALL] search_products(query='running shoes')
+2026-06-24 16:36:39,145 | INFO     | agent.tools | [TOOL RESULT] Found 3 product(s) for query 'running shoes'
+2026-06-24 16:36:39,145 | INFO     | agent.core | [AGENT] Response generated (488 chars)
+2026-06-24 16:36:39,145 | INFO     | agent.core | [AGENT] Question received: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-24 16:36:39,146 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1001', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': True, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,146 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1001')
+2026-06-24 16:36:39,146 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1001 | Status: Delivered
+2026-06-24 16:36:39,146 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-201')
+2026-06-24 16:36:39,147 | INFO     | agent.tools | [TOOL CALL] search_products(query='Footwear')
+2026-06-24 16:36:39,147 | INFO     | agent.tools | [TOOL RESULT] Found 5 product(s) for query 'Footwear'
+2026-06-24 16:36:39,147 | INFO     | agent.core | [AGENT] Response generated (726 chars)
+2026-06-24 16:36:39,147 | INFO     | agent.core | [AGENT] Question received: 'Find quantum teleportation laptop'
+2026-06-24 16:36:39,147 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'quantum teleportation laptop'}
+2026-06-24 16:36:39,147 | INFO     | agent.tools | [TOOL CALL] search_products(query='quantum teleportation laptop')
+2026-06-24 16:36:39,147 | INFO     | agent.tools | [TOOL RESULT] Found 0 product(s) for query 'quantum teleportation laptop'
+2026-06-24 16:36:39,148 | INFO     | agent.core | [AGENT] Response generated (323 chars)
+2026-06-24 16:36:39,148 | INFO     | agent.core | [AGENT] Question received: 'Hello, can you help me?'
+2026-06-24 16:36:39,148 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,148 | INFO     | agent.core | [AGENT] Response generated (234 chars)
+2026-06-24 16:36:39,148 | INFO     | agent.core | [AGENT] Question received: 'Where is order ORD-99999?'
+2026-06-24 16:36:39,148 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-99999', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,148 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-99999')
+2026-06-24 16:36:39,148 | WARNING  | agent.tools | [TOOL RESULT] Order 'ORD-99999' not found.
+2026-06-24 16:36:39,148 | INFO     | agent.core | [AGENT] Response generated (235 chars)
+2026-06-24 16:36:39,149 | INFO     | agent.core | [AGENT] Question received: 'Tell me about PROD-99999'
+2026-06-24 16:36:39,149 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': 'PROD-99999', 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,149 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-99999')
+2026-06-24 16:36:39,149 | WARNING  | agent.tools | [TOOL RESULT] Product 'PROD-99999' not found.
+2026-06-24 16:36:39,149 | INFO     | agent.core | [AGENT] Response generated (197 chars)
+2026-06-24 16:36:39,149 | INFO     | agent.core | [AGENT] Question received: 'Find headphones'
+2026-06-24 16:36:39,149 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'headphones'}
+2026-06-24 16:36:39,149 | INFO     | agent.tools | [TOOL CALL] search_products(query='headphones')
+2026-06-24 16:36:39,149 | INFO     | agent.tools | [TOOL RESULT] Found 4 product(s) for query 'headphones'
+2026-06-24 16:36:39,149 | INFO     | agent.core | [AGENT] Response generated (640 chars)
+2026-06-24 16:36:39,149 | INFO     | agent.core | [AGENT] Question received: 'Find laptops'
+2026-06-24 16:36:39,150 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'laptops'}
+2026-06-24 16:36:39,150 | INFO     | agent.tools | [TOOL CALL] search_products(query='laptops')
+2026-06-24 16:36:39,150 | INFO     | agent.tools | [TOOL RESULT] Found 0 product(s) for query 'laptops'
+2026-06-24 16:36:39,150 | INFO     | agent.core | [AGENT] Response generated (302 chars)
+2026-06-24 16:36:39,150 | INFO     | agent.core | [AGENT] Question received: 'Where is ORD-1001'
+2026-06-24 16:36:39,150 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1001', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,150 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1001')
+2026-06-24 16:36:39,150 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1001 | Status: Delivered
+2026-06-24 16:36:39,150 | INFO     | agent.core | [AGENT] Response generated (168 chars)
+2026-06-24 16:36:39,150 | INFO     | agent.core | [AGENT] Question received: 'PROD-101'
+2026-06-24 16:36:39,150 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': 'PROD-101', 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,150 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-101')
+2026-06-24 16:36:39,151 | INFO     | agent.core | [AGENT] Response generated (210 chars)
+2026-06-24 16:36:39,151 | INFO     | agent.core | [AGENT] Question received: 'Help me'
+2026-06-24 16:36:39,151 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:39,151 | INFO     | agent.core | [AGENT] Response generated (234 chars)
+2026-06-24 16:36:53,610 | INFO     | agent.core | [AGENT] Question received: 'Where is my order ORD-1002?'
+2026-06-24 16:36:53,611 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1002', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,611 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1002')
+2026-06-24 16:36:53,611 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1002 | Status: In Transit
+2026-06-24 16:36:53,611 | INFO     | agent.core | [AGENT] Response generated (254 chars)
+2026-06-24 16:36:53,611 | INFO     | agent.core | [AGENT] Question received: 'What is the status of ORD-1001?'
+2026-06-24 16:36:53,611 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1001', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,611 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1001')
+2026-06-24 16:36:53,611 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1001 | Status: Delivered
+2026-06-24 16:36:53,611 | INFO     | agent.core | [AGENT] Response generated (168 chars)
+2026-06-24 16:36:53,612 | INFO     | agent.core | [AGENT] Question received: 'Has my order ORD-1003 been shipped yet?'
+2026-06-24 16:36:53,612 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1003', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,612 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1003')
+2026-06-24 16:36:53,612 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1003 | Status: Processing
+2026-06-24 16:36:53,612 | INFO     | agent.core | [AGENT] Response generated (200 chars)
+2026-06-24 16:36:53,612 | INFO     | agent.core | [AGENT] Question received: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-24 16:36:53,612 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1001', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': True, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,613 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1001')
+2026-06-24 16:36:53,613 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1001 | Status: Delivered
+2026-06-24 16:36:53,613 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-201')
+2026-06-24 16:36:53,618 | INFO     | agent.tools | [TOOL CALL] search_products(query='Footwear')
+2026-06-24 16:36:53,618 | INFO     | agent.tools | [TOOL RESULT] Found 5 product(s) for query 'Footwear'
+2026-06-24 16:36:53,618 | INFO     | agent.core | [AGENT] Response generated (726 chars)
+2026-06-24 16:36:53,619 | INFO     | agent.core | [AGENT] Question received: 'Can you suggest a budget-friendly alternative to what I bought in ORD-1002?'
+2026-06-24 16:36:53,619 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1002', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': True, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,619 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1002')
+2026-06-24 16:36:53,619 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1002 | Status: In Transit
+2026-06-24 16:36:53,619 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-305')
+2026-06-24 16:36:53,620 | INFO     | agent.tools | [TOOL CALL] search_products(query='Electronics')
+2026-06-24 16:36:53,620 | INFO     | agent.tools | [TOOL RESULT] Found 6 product(s) for query 'Electronics'
+2026-06-24 16:36:53,620 | INFO     | agent.core | [AGENT] Response generated (831 chars)
+2026-06-24 16:36:53,620 | INFO     | agent.core | [AGENT] Question received: 'Show me some wireless headphones'
+2026-06-24 16:36:53,622 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'wireless headphones'}
+2026-06-24 16:36:53,622 | INFO     | agent.tools | [TOOL CALL] search_products(query='wireless headphones')
+2026-06-24 16:36:53,622 | INFO     | agent.tools | [TOOL RESULT] Found 2 product(s) for query 'wireless headphones'
+2026-06-24 16:36:53,622 | INFO     | agent.core | [AGENT] Response generated (341 chars)
+2026-06-24 16:36:53,622 | INFO     | agent.core | [AGENT] Question received: 'Find me affordable running shoes under budget'
+2026-06-24 16:36:53,622 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'running shoes'}
+2026-06-24 16:36:53,623 | INFO     | agent.tools | [TOOL CALL] search_products(query='running shoes')
+2026-06-24 16:36:53,623 | INFO     | agent.tools | [TOOL RESULT] Found 3 product(s) for query 'running shoes'
+2026-06-24 16:36:53,623 | INFO     | agent.core | [AGENT] Response generated (488 chars)
+2026-06-24 16:36:53,623 | INFO     | agent.core | [AGENT] Question received: "I'm looking for jeans"
+2026-06-24 16:36:53,623 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'jeans'}
+2026-06-24 16:36:53,624 | INFO     | agent.tools | [TOOL CALL] search_products(query='jeans')
+2026-06-24 16:36:53,624 | INFO     | agent.tools | [TOOL RESULT] Found 1 product(s) for query 'jeans'
+2026-06-24 16:36:53,624 | INFO     | agent.core | [AGENT] Response generated (184 chars)
+2026-06-24 16:36:53,624 | INFO     | agent.core | [AGENT] Question received: 'Where is order ORD-9999?'
+2026-06-24 16:36:53,624 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-9999', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,624 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-9999')
+2026-06-24 16:36:53,624 | WARNING  | agent.tools | [TOOL RESULT] Order 'ORD-9999' not found.
+2026-06-24 16:36:53,625 | INFO     | agent.core | [AGENT] Response generated (234 chars)
+2026-06-24 16:36:53,625 | INFO     | agent.core | [AGENT] Question received: 'Get details for PROD-0000'
+2026-06-24 16:36:53,625 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': 'PROD-0000', 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,625 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-0000')
+2026-06-24 16:36:53,625 | WARNING  | agent.tools | [TOOL RESULT] Product 'PROD-0000' not found.
+2026-06-24 16:36:53,625 | INFO     | agent.core | [AGENT] Response generated (196 chars)
+2026-06-24 16:36:53,625 | INFO     | agent.core | [AGENT] Question received: 'Hello, can you help me?'
+2026-06-24 16:36:53,625 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:36:53,625 | INFO     | agent.core | [AGENT] Response generated (234 chars)
+2026-06-24 16:47:52,809 | INFO     | agent.core | [AGENT] Question received: 'Where is my order ORD-1002?'
+2026-06-24 16:47:52,810 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1002', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': False, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:47:52,810 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1002')
+2026-06-24 16:47:52,810 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1002 | Status: In Transit
+2026-06-24 16:47:52,811 | INFO     | agent.core | [AGENT] Response generated (254 chars)
+2026-06-24 16:47:58,229 | INFO     | agent.core | [AGENT] Question received: 'Is there a cheaper alternative to the shoes in ORD-1001?'
+2026-06-24 16:47:58,230 | INFO     | agent.core | [INTENT] {'order_id': 'ORD-1001', 'product_id': None, 'wants_order_status': True, 'wants_cheaper_alternative': True, 'wants_product_search': False, 'search_query': None}
+2026-06-24 16:47:58,230 | INFO     | agent.tools | [TOOL CALL] get_order(order_id='ORD-1001')
+2026-06-24 16:47:58,230 | INFO     | agent.tools | [TOOL RESULT] Found order: ORD-1001 | Status: Delivered
+2026-06-24 16:47:58,231 | INFO     | agent.tools | [TOOL CALL] get_product(product_id='PROD-201')
+2026-06-24 16:47:58,238 | INFO     | agent.tools | [TOOL CALL] search_products(query='Footwear')
+2026-06-24 16:47:58,238 | INFO     | agent.tools | [TOOL RESULT] Found 5 product(s) for query 'Footwear'
+2026-06-24 16:47:58,238 | INFO     | agent.core | [AGENT] Response generated (726 chars)
+2026-06-24 16:48:12,611 | INFO     | agent.core | [AGENT] Question received: 'Show me wireless headphones'
+2026-06-24 16:48:12,612 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'wireless headphones'}
+2026-06-24 16:48:12,613 | INFO     | agent.tools | [TOOL CALL] search_products(query='wireless headphones')
+2026-06-24 16:48:12,613 | INFO     | agent.tools | [TOOL RESULT] Found 2 product(s) for query 'wireless headphones'
+2026-06-24 16:48:12,613 | INFO     | agent.core | [AGENT] Response generated (341 chars)
+2026-06-24 16:48:16,899 | INFO     | agent.core | [AGENT] Question received: 'Find affordable running shoes'
+2026-06-24 16:48:16,900 | INFO     | agent.core | [INTENT] {'order_id': None, 'product_id': None, 'wants_order_status': False, 'wants_cheaper_alternative': False, 'wants_product_search': True, 'search_query': 'running shoes'}
+2026-06-24 16:48:16,900 | INFO     | agent.tools | [TOOL CALL] search_products(query='running shoes')
+2026-06-24 16:48:16,900 | INFO     | agent.tools | [TOOL RESULT] Found 3 product(s) for query 'running shoes'
+2026-06-24 16:48:16,900 | INFO     | agent.core | [AGENT] Response generated (488 chars)
+2026-06-26 16:12:59,080 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-26 16:12:59,081 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,082 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:12:59,082 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:12:59,082 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:12:59,083 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-26 16:12:59,091 | INFO     | agent.executor | [EXECUTOR] Finished in 8.9ms | tools=['get_order'] | errors=[]
+2026-06-26 16:12:59,091 | INFO     | agent.core | [AGENT] Response: 254 chars in 101.0ms
+2026-06-26 16:12:59,100 | INFO     | agent.core | [AGENT] Question: 'What is the status of ORD-1001?'
+2026-06-26 16:12:59,100 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,100 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:12:59,101 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:12:59,101 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:12:59,101 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-26 16:12:59,104 | INFO     | agent.executor | [EXECUTOR] Finished in 2.6ms | tools=['get_order'] | errors=[]
+2026-06-26 16:12:59,104 | INFO     | agent.core | [AGENT] Response: 168 chars in 7.6ms
+2026-06-26 16:12:59,111 | INFO     | agent.core | [AGENT] Question: 'Has my order ORD-1003 been shipped yet?'
+2026-06-26 16:12:59,113 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,114 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:12:59,115 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:12:59,115 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:12:59,115 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1003')
+2026-06-26 16:12:59,122 | INFO     | agent.executor | [EXECUTOR] Finished in 6.8ms | tools=['get_order'] | errors=[]
+2026-06-26 16:12:59,123 | INFO     | agent.core | [AGENT] Response: 200 chars in 14.7ms
+2026-06-26 16:12:59,128 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-26 16:12:59,128 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,129 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-26 16:12:59,129 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-26 16:12:59,129 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:12:59,129 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-26 16:12:59,132 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:12:59,132 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-26 16:12:59,134 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:12:59,134 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-26 16:12:59,139 | INFO     | agent.executor | [EXECUTOR] Finished in 10.2ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-26 16:12:59,140 | INFO     | agent.core | [AGENT] Response: 726 chars in 14.1ms
+2026-06-26 16:12:59,146 | INFO     | agent.core | [AGENT] Question: 'Can you suggest a budget-friendly alternative to what I bought in ORD-1002?'
+2026-06-26 16:12:59,147 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,147 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-26 16:12:59,147 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-26 16:12:59,148 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:12:59,148 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-26 16:12:59,150 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:12:59,150 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-305')
+2026-06-26 16:12:59,152 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:12:59,153 | INFO     | agent.tools | [TOOL] search_products(query='Electronics')
+2026-06-26 16:12:59,155 | INFO     | agent.executor | [EXECUTOR] Finished in 7.5ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-26 16:12:59,155 | INFO     | agent.core | [AGENT] Response: 831 chars in 12.7ms
+2026-06-26 16:12:59,162 | INFO     | agent.core | [AGENT] Question: 'Show me some wireless headphones'
+2026-06-26 16:12:59,162 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,164 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:12:59,164 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:12:59,164 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:12:59,164 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-26 16:12:59,167 | INFO     | agent.executor | [EXECUTOR] Finished in 3.1ms | tools=['search_products'] | errors=[]
+2026-06-26 16:12:59,167 | INFO     | agent.core | [AGENT] Response: 341 chars in 8.6ms
+2026-06-26 16:12:59,171 | INFO     | agent.core | [AGENT] Question: 'Find me affordable running shoes under budget'
+2026-06-26 16:12:59,172 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,172 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:12:59,172 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:12:59,172 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:12:59,172 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-26 16:12:59,175 | INFO     | agent.executor | [EXECUTOR] Finished in 2.2ms | tools=['search_products'] | errors=[]
+2026-06-26 16:12:59,175 | INFO     | agent.core | [AGENT] Response: 488 chars in 4.9ms
+2026-06-26 16:12:59,181 | INFO     | agent.core | [AGENT] Question: "I'm looking for jeans"
+2026-06-26 16:12:59,181 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,182 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:12:59,182 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:12:59,182 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:12:59,182 | INFO     | agent.tools | [TOOL] search_products(query='jeans')
+2026-06-26 16:12:59,185 | INFO     | agent.executor | [EXECUTOR] Finished in 2.7ms | tools=['search_products'] | errors=[]
+2026-06-26 16:12:59,185 | INFO     | agent.core | [AGENT] Response: 184 chars in 7.7ms
+2026-06-26 16:12:59,189 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-26 16:12:59,189 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,189 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:12:59,189 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-26 16:12:59,190 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:12:59,190 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-26 16:12:59,192 | INFO     | agent.executor | [EXECUTOR] Finished in 2.8ms | tools=['get_product'] | errors=[]
+2026-06-26 16:12:59,193 | INFO     | agent.core | [AGENT] Response: 204 chars in 5.5ms
+2026-06-26 16:12:59,203 | INFO     | agent.core | [AGENT] Question: 'Tell me about PROD-305'
+2026-06-26 16:12:59,204 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,204 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:12:59,204 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-305.
+2026-06-26 16:12:59,204 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:12:59,204 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-305')
+2026-06-26 16:12:59,207 | INFO     | agent.executor | [EXECUTOR] Finished in 2.7ms | tools=['get_product'] | errors=[]
+2026-06-26 16:12:59,207 | INFO     | agent.core | [AGENT] Response: 218 chars in 6.6ms
+2026-06-26 16:12:59,212 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-9999?'
+2026-06-26 16:12:59,212 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,213 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:12:59,213 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:12:59,213 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:12:59,213 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-9999')
+2026-06-26 16:12:59,217 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-9999'. Please check the order ID and try again."
+2026-06-26 16:12:59,218 | INFO     | agent.executor | [EXECUTOR] Finished in 4.6ms | tools=['get_order'] | errors=["No order found with ID 'ORD-9999'. Please check the order ID and try again."]
+2026-06-26 16:12:59,218 | INFO     | agent.core | [AGENT] Response: 234 chars in 8.5ms
+2026-06-26 16:12:59,222 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-0000'
+2026-06-26 16:12:59,223 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,223 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:12:59,223 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-0000.
+2026-06-26 16:12:59,223 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:12:59,223 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-0000')
+2026-06-26 16:12:59,225 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No product found with ID 'PROD-0000'."
+2026-06-26 16:12:59,226 | INFO     | agent.executor | [EXECUTOR] Finished in 2.4ms | tools=['get_product'] | errors=["No product found with ID 'PROD-0000'."]
+2026-06-26 16:12:59,226 | INFO     | agent.core | [AGENT] Response: 196 chars in 5.0ms
+2026-06-26 16:12:59,232 | INFO     | agent.core | [AGENT] Question: 'Hello, can you help me?'
+2026-06-26 16:12:59,233 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:12:59,233 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-26 16:12:59,233 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-26 16:12:59,233 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:12:59,233 | INFO     | agent.core | [AGENT] Response: 234 chars in 3.9ms
+2026-06-26 16:14:50,860 | INFO     | agent.core | [AGENT] Question: 'get_order(order_id)'
+2026-06-26 16:14:50,861 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:14:50,873 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:14:50,886 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:14:50,894 | INFO     | agent.core | [AGENT] Plan validation failed: 'I need your order ID to look that up. Could you share it? (e.g. ORD-1002)'
+2026-06-26 16:15:02,504 | INFO     | agent.core | [AGENT] Question: 'ORD-1002'
+2026-06-26 16:15:02,507 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:15:02,508 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:15:02,508 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:15:02,510 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:15:02,517 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-26 16:15:02,793 | INFO     | agent.executor | [EXECUTOR] Finished in 283.4ms | tools=['get_order'] | errors=[]
+2026-06-26 16:15:02,794 | INFO     | agent.core | [AGENT] Response: 254 chars in 417.4ms
+2026-06-26 16:15:27,295 | INFO     | agent.core | [AGENT] Question: 'PROD-305'
+2026-06-26 16:15:27,300 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:15:27,301 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:15:27,302 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-305.
+2026-06-26 16:15:27,303 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:15:27,304 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-305')
+2026-06-26 16:15:27,326 | INFO     | agent.executor | [EXECUTOR] Finished in 23.4ms | tools=['get_product'] | errors=[]
+2026-06-26 16:15:27,328 | INFO     | agent.core | [AGENT] Response: 218 chars in 473.4ms
+2026-06-26 16:15:54,781 | INFO     | agent.core | [AGENT] Question: 'where is my order'
+2026-06-26 16:15:54,782 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:15:54,830 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:15:54,842 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:15:54,847 | INFO     | agent.core | [AGENT] Plan validation failed: 'I need your order ID to look that up. Could you share it? (e.g. ORD-1002)'
+2026-06-26 16:16:18,162 | INFO     | agent.core | [AGENT] Question: "I don't have my order id "
+2026-06-26 16:16:18,186 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:16:18,194 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:16:18,196 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:16:18,199 | INFO     | agent.core | [AGENT] Plan validation failed: 'I need your order ID to look that up. Could you share it? (e.g. ORD-1002)'
+2026-06-26 16:16:27,326 | INFO     | agent.core | [AGENT] Question: 'Find affordable running shoes'
+2026-06-26 16:16:27,327 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:16:27,342 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:16:27,348 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:16:27,349 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:16:27,353 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-26 16:16:27,363 | INFO     | agent.executor | [EXECUTOR] Finished in 14.7ms | tools=['search_products'] | errors=[]
+2026-06-26 16:16:27,364 | INFO     | agent.core | [AGENT] Response: 488 chars in 63.5ms
+2026-06-26 16:16:38,755 | INFO     | agent.core | [AGENT] Question: 'ord-1007'
+2026-06-26 16:16:38,757 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:16:38,758 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:16:38,759 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:16:38,759 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:16:38,760 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1007')
+2026-06-26 16:16:38,779 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-1007'. Please check the order ID and try again."
+2026-06-26 16:16:38,781 | INFO     | agent.executor | [EXECUTOR] Finished in 21.3ms | tools=['get_order'] | errors=["No order found with ID 'ORD-1007'. Please check the order ID and try again."]
+2026-06-26 16:16:38,781 | INFO     | agent.core | [AGENT] Response: 234 chars in 516.8ms
+2026-06-26 16:16:49,619 | INFO     | agent.core | [AGENT] Question: 'ord-1003'
+2026-06-26 16:16:49,625 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:16:49,626 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:16:49,628 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:16:49,632 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:16:49,640 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1003')
+2026-06-26 16:16:49,801 | INFO     | agent.executor | [EXECUTOR] Finished in 169.1ms | tools=['get_order'] | errors=[]
+2026-06-26 16:16:49,802 | INFO     | agent.core | [AGENT] Response: 200 chars in 386.6ms
+2026-06-26 16:17:16,143 | INFO     | agent.core | [AGENT] Question: 'Find affordable running shoes'
+2026-06-26 16:17:16,144 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:17:16,162 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:17:16,165 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:17:16,166 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:17:16,166 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-26 16:17:16,200 | INFO     | agent.executor | [EXECUTOR] Finished in 34.0ms | tools=['search_products'] | errors=[]
+2026-06-26 16:17:16,200 | INFO     | agent.core | [AGENT] Response: 488 chars in 63.9ms
+2026-06-26 16:17:22,683 | INFO     | agent.core | [AGENT] Question: 'Show me wireless headphones'
+2026-06-26 16:17:22,684 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:17:22,684 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:17:22,686 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:17:22,688 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:17:22,690 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-26 16:17:23,001 | INFO     | agent.executor | [EXECUTOR] Finished in 312.7ms | tools=['search_products'] | errors=[]
+2026-06-26 16:17:23,001 | INFO     | agent.core | [AGENT] Response: 341 chars in 327.5ms
+2026-06-26 16:17:35,443 | INFO     | agent.core | [AGENT] Question: 'Show me wireless headphones'
+2026-06-26 16:17:35,566 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:17:35,574 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:17:35,582 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:17:35,585 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:17:35,699 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-26 16:17:36,887 | INFO     | agent.executor | [EXECUTOR] Finished in 1301.0ms | tools=['search_products'] | errors=[]
+2026-06-26 16:17:36,888 | INFO     | agent.core | [AGENT] Response: 341 chars in 1804.4ms
+2026-06-26 16:18:22,042 | INFO     | agent.core | [AGENT] Question: 'show me shoes'
+2026-06-26 16:18:22,043 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:18:22,048 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:18:22,049 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:18:22,057 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:18:22,156 | INFO     | agent.tools | [TOOL] search_products(query='shoes')
+2026-06-26 16:18:22,426 | INFO     | agent.executor | [EXECUTOR] Finished in 369.3ms | tools=['search_products'] | errors=[]
+2026-06-26 16:18:22,427 | INFO     | agent.core | [AGENT] Response: 480 chars in 482.4ms
+2026-06-26 16:18:31,077 | INFO     | agent.core | [AGENT] Question: 'cloths'
+2026-06-26 16:18:31,078 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:18:31,078 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-26 16:18:31,079 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-26 16:18:31,079 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:18:31,079 | INFO     | agent.core | [AGENT] Response: 234 chars in 214.0ms
+2026-06-26 16:18:41,028 | INFO     | agent.core | [AGENT] Question: 'watches'
+2026-06-26 16:18:41,042 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:18:41,055 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-26 16:18:41,059 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-26 16:18:41,062 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:18:41,062 | INFO     | agent.core | [AGENT] Response: 234 chars in 99.4ms
+2026-06-26 16:18:49,558 | INFO     | agent.core | [AGENT] Question: 'headphones'
+2026-06-26 16:18:49,561 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:18:49,562 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-26 16:18:49,572 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-26 16:18:49,575 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:18:49,576 | INFO     | agent.core | [AGENT] Response: 234 chars in 132.8ms
+2026-06-26 16:18:56,805 | INFO     | agent.core | [AGENT] Question: 'wireless headphones'
+2026-06-26 16:18:56,806 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:18:56,836 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:18:56,837 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:18:56,839 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:18:56,850 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-26 16:18:56,922 | INFO     | agent.executor | [EXECUTOR] Finished in 82.3ms | tools=['search_products'] | errors=[]
+2026-06-26 16:18:56,922 | INFO     | agent.core | [AGENT] Response: 341 chars in 162.6ms
+2026-06-26 16:19:07,182 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes in ORD-1001?'
+2026-06-26 16:19:07,183 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:19:07,184 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-26 16:19:07,184 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-26 16:19:07,185 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:19:07,185 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-26 16:19:07,201 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:19:07,201 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-26 16:19:07,337 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:19:07,339 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-26 16:19:07,357 | INFO     | agent.executor | [EXECUTOR] Finished in 172.0ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-26 16:19:07,433 | INFO     | agent.core | [AGENT] Response: 726 chars in 279.6ms
+2026-06-26 16:19:27,255 | INFO     | agent.core | [AGENT] Question: 'alternative wireless headphones'
+2026-06-26 16:19:27,255 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:19:27,261 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:19:27,262 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:19:27,263 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:19:27,265 | INFO     | agent.tools | [TOOL] search_products(query='alternative wireless headphones')
+2026-06-26 16:19:27,376 | INFO     | agent.executor | [EXECUTOR] Finished in 112.5ms | tools=['search_products'] | errors=[]
+2026-06-26 16:19:27,378 | INFO     | agent.core | [AGENT] Response: 326 chars in 307.8ms
+2026-06-26 16:48:04,657 | INFO     | agent.core | [AGENT] Question: 'hi'
+2026-06-26 16:48:04,658 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:48:04,659 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-26 16:48:04,659 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-26 16:48:04,660 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:48:04,661 | INFO     | agent.core | [AGENT] Response: 234 chars in 279.3ms
+2026-06-26 16:48:25,027 | INFO     | agent.core | [AGENT] Question: 'where is my product PROD-104'
+2026-06-26 16:48:25,028 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:48:25,035 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:48:25,037 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-104.
+2026-06-26 16:48:25,038 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:48:25,040 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-104')
+2026-06-26 16:48:25,059 | INFO     | agent.executor | [EXECUTOR] Finished in 19.9ms | tools=['get_product'] | errors=[]
+2026-06-26 16:48:25,060 | INFO     | agent.core | [AGENT] Response: 210 chars in 191.9ms
+2026-06-26 16:48:46,700 | INFO     | agent.core | [AGENT] Question: 'PROD 201'
+2026-06-26 16:48:46,701 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:48:46,709 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:48:46,710 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:48:46,723 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:48:46,733 | INFO     | agent.tools | [TOOL] search_products(query='PROD 201')
+2026-06-26 16:48:46,893 | INFO     | agent.executor | [EXECUTOR] Finished in 169.6ms | tools=['search_products'] | errors=[]
+2026-06-26 16:48:46,894 | INFO     | agent.core | [AGENT] Response: 303 chars in 314.1ms
+2026-06-26 16:48:56,062 | INFO     | agent.core | [AGENT] Question: 'PROD-201'
+2026-06-26 16:48:56,065 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:48:56,066 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:48:56,067 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-26 16:48:56,069 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:48:56,070 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-26 16:48:56,341 | INFO     | agent.executor | [EXECUTOR] Finished in 272.6ms | tools=['get_product'] | errors=[]
+2026-06-26 16:48:56,342 | INFO     | agent.core | [AGENT] Response: 204 chars in 446.9ms
+2026-06-26 16:49:19,065 | INFO     | agent.core | [AGENT] Question: 'export LLM_PROVIDER=gemini\nexport GEMINI_API_KEY=your-key'
+2026-06-26 16:49:19,069 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:49:19,071 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:49:19,072 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:49:19,073 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:49:19,082 | INFO     | agent.tools | [TOOL] search_products(query='export LLM_PROVIDER=gemini export GEMINI_API_KEY=your-key')
+2026-06-26 16:49:19,112 | INFO     | agent.executor | [EXECUTOR] Finished in 39.6ms | tools=['search_products'] | errors=[]
+2026-06-26 16:49:19,115 | INFO     | agent.core | [AGENT] Response: 352 chars in 156.5ms
+2026-06-26 16:51:05,201 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-26 16:51:05,202 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:51:05,202 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:51:05,203 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:51:05,203 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:51:05,204 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-26 16:51:05,217 | INFO     | agent.executor | [EXECUTOR] Finished in 13.8ms | tools=['get_order'] | errors=[]
+2026-06-26 16:51:05,218 | INFO     | agent.core | [AGENT] Response: 254 chars in 80.3ms
+2026-06-26 16:51:07,349 | INFO     | agent.core | [AGENT] Question: 'Show me wireless headphones'
+2026-06-26 16:51:07,350 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:51:07,353 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:51:07,353 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:51:07,354 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:51:07,354 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-26 16:51:07,391 | INFO     | agent.executor | [EXECUTOR] Finished in 36.7ms | tools=['search_products'] | errors=[]
+2026-06-26 16:51:07,397 | INFO     | agent.core | [AGENT] Response: 341 chars in 65.6ms
+2026-06-26 16:51:15,361 | INFO     | agent.core | [AGENT] Question: 'Prod 102'
+2026-06-26 16:51:15,366 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:51:15,414 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:51:15,521 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:51:15,522 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:51:15,523 | INFO     | agent.tools | [TOOL] search_products(query='Prod 102')
+2026-06-26 16:51:15,550 | INFO     | agent.executor | [EXECUTOR] Finished in 27.9ms | tools=['search_products'] | errors=[]
+2026-06-26 16:51:15,550 | INFO     | agent.core | [AGENT] Response: 303 chars in 240.4ms
+2026-06-26 16:51:19,587 | INFO     | agent.core | [AGENT] Question: 'prod-102'
+2026-06-26 16:51:19,589 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:51:19,589 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:51:19,591 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-102.
+2026-06-26 16:51:19,592 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:51:19,592 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-102')
+2026-06-26 16:51:19,612 | INFO     | agent.executor | [EXECUTOR] Finished in 19.1ms | tools=['get_product'] | errors=[]
+2026-06-26 16:51:19,616 | INFO     | agent.core | [AGENT] Response: 205 chars in 134.1ms
+2026-06-26 16:51:29,347 | INFO     | agent.core | [AGENT] Question: 'where is my PROD-102'
+2026-06-26 16:51:29,348 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:51:29,350 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:51:29,468 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-102.
+2026-06-26 16:51:29,468 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:51:29,468 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-102')
+2026-06-26 16:51:29,485 | INFO     | agent.executor | [EXECUTOR] Finished in 16.9ms | tools=['get_product'] | errors=[]
+2026-06-26 16:51:29,486 | INFO     | agent.core | [AGENT] Response: 205 chars in 183.9ms
+2026-06-26 16:51:46,779 | INFO     | agent.core | [AGENT] Question: 'where is my order ORD-1003'
+2026-06-26 16:51:46,785 | INFO     | agent.planner | [PLANNER] Active planner: DeterministicPlanner
+2026-06-26 16:51:46,792 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:51:46,793 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:51:46,794 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:51:46,797 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1003')
+2026-06-26 16:51:46,910 | INFO     | agent.executor | [EXECUTOR] Finished in 115.0ms | tools=['get_order'] | errors=[]
+2026-06-26 16:51:46,910 | INFO     | agent.core | [AGENT] Response: 200 chars in 189.3ms
+2026-06-26 16:56:29,841 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-26 16:56:29,841 | INFO     | agent.planner | Loaded configuration...
+2026-06-26 16:56:31,933 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-26 16:56:31,933 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-26 16:56:31,933 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-26 16:56:33,076 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:56:33,076 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:56:33,076 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:56:33,076 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:56:33,076 | INFO     | agent.core | [AGENT] Response: 234 chars in 3238.1ms
+2026-06-26 16:56:33,078 | INFO     | agent.core | [AGENT] Question: 'Show me wireless headphones.'
+2026-06-26 16:56:33,365 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:56:33,365 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:56:33,365 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:56:33,365 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:56:33,365 | INFO     | agent.core | [AGENT] Response: 234 chars in 288.3ms
+2026-06-26 16:56:33,367 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes in ORD-1001?'
+2026-06-26 16:56:33,876 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:56:33,876 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:56:33,876 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:56:33,876 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:56:33,876 | INFO     | agent.core | [AGENT] Response: 234 chars in 510.0ms
+2026-06-26 16:56:33,878 | INFO     | agent.core | [AGENT] Question: 'Where is my PROD-102?'
+2026-06-26 16:56:34,183 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:56:34,183 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:56:34,183 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:56:34,184 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:56:34,184 | INFO     | agent.core | [AGENT] Response: 234 chars in 306.5ms
+2026-06-26 16:57:06,833 | INFO     | agent.planner | Loaded configuration...
+2026-06-26 16:57:08,433 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-26 16:57:08,433 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-26 16:57:08,433 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-26 16:57:16,139 | INFO     | agent.planner | Loaded configuration...
+2026-06-26 16:57:17,773 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-26 16:57:17,774 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-26 16:57:17,774 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-26 16:57:17,777 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-26 16:57:18,487 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:18,488 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:18,488 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:18,489 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:18,489 | INFO     | agent.core | [AGENT] Response: 234 chars in 714.6ms
+2026-06-26 16:57:18,492 | INFO     | agent.core | [AGENT] Question: 'What is the status of ORD-1001?'
+2026-06-26 16:57:18,803 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:18,804 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:18,804 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:18,804 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:18,804 | INFO     | agent.core | [AGENT] Response: 234 chars in 313.2ms
+2026-06-26 16:57:18,808 | INFO     | agent.core | [AGENT] Question: 'Has my order ORD-1003 been shipped yet?'
+2026-06-26 16:57:19,035 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:19,035 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:19,035 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:19,036 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:19,036 | INFO     | agent.core | [AGENT] Response: 234 chars in 228.9ms
+2026-06-26 16:57:19,038 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-26 16:57:19,344 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:19,345 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:19,345 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:19,345 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:19,345 | INFO     | agent.core | [AGENT] Response: 234 chars in 308.2ms
+2026-06-26 16:57:19,348 | INFO     | agent.core | [AGENT] Question: 'Can you suggest a budget-friendly alternative to what I bought in ORD-1002?'
+2026-06-26 16:57:19,752 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:19,753 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:19,753 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:19,753 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:19,753 | INFO     | agent.core | [AGENT] Response: 234 chars in 406.3ms
+2026-06-26 16:57:19,755 | INFO     | agent.core | [AGENT] Question: 'Show me some wireless headphones'
+2026-06-26 16:57:20,058 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:20,059 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:20,059 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:20,059 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:20,059 | INFO     | agent.core | [AGENT] Response: 234 chars in 304.3ms
+2026-06-26 16:57:20,061 | INFO     | agent.core | [AGENT] Question: 'Find me affordable running shoes under budget'
+2026-06-26 16:57:20,369 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:20,369 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:20,369 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:20,369 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:20,369 | INFO     | agent.core | [AGENT] Response: 234 chars in 309.2ms
+2026-06-26 16:57:20,372 | INFO     | agent.core | [AGENT] Question: "I'm looking for jeans"
+2026-06-26 16:57:20,674 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:20,674 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:20,674 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:20,674 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:20,674 | INFO     | agent.core | [AGENT] Response: 234 chars in 303.7ms
+2026-06-26 16:57:20,677 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-26 16:57:20,981 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:20,981 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:20,981 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:20,981 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:20,981 | INFO     | agent.core | [AGENT] Response: 234 chars in 305.6ms
+2026-06-26 16:57:20,984 | INFO     | agent.core | [AGENT] Question: 'Tell me about PROD-305'
+2026-06-26 16:57:21,289 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:21,289 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:21,290 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:21,290 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:21,290 | INFO     | agent.core | [AGENT] Response: 234 chars in 307.1ms
+2026-06-26 16:57:21,293 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-9999?'
+2026-06-26 16:57:21,596 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:21,596 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:21,596 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:21,596 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:21,596 | INFO     | agent.core | [AGENT] Response: 234 chars in 304.4ms
+2026-06-26 16:57:21,599 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-0000'
+2026-06-26 16:57:22,211 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:22,211 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:22,211 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:22,212 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:22,212 | INFO     | agent.core | [AGENT] Response: 234 chars in 614.0ms
+2026-06-26 16:57:22,215 | INFO     | agent.core | [AGENT] Question: 'Hello, can you help me?'
+2026-06-26 16:57:22,619 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:22,620 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:22,620 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:22,620 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:22,620 | INFO     | agent.core | [AGENT] Response: 234 chars in 406.6ms
+2026-06-26 16:57:53,183 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-26 16:57:53,183 | INFO     | agent.planner | Loaded configuration...
+2026-06-26 16:57:54,718 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-26 16:57:54,718 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-26 16:57:54,718 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-26 16:57:55,388 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:55,388 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:55,389 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:55,389 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:55,389 | INFO     | agent.core | [AGENT] Response: 234 chars in 2208.5ms
+2026-06-26 16:57:55,392 | INFO     | agent.core | [AGENT] Question: 'Show me wireless headphones.'
+2026-06-26 16:57:55,711 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:55,712 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:55,712 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:55,712 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:55,712 | INFO     | agent.core | [AGENT] Response: 234 chars in 321.1ms
+2026-06-26 16:57:55,715 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes in ORD-1001?'
+2026-06-26 16:57:55,990 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:55,991 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:55,991 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:55,991 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:55,991 | INFO     | agent.core | [AGENT] Response: 234 chars in 277.6ms
+2026-06-26 16:57:55,994 | INFO     | agent.core | [AGENT] Question: 'Where is my PROD-102?'
+2026-06-26 16:57:56,411 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Returning unknown plan.
+2026-06-26 16:57:56,411 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.00 | tools=[]
+2026-06-26 16:57:56,412 | INFO     | agent.core | [AGENT] Reason: Gemini unavailable; returned unknown plan.
+2026-06-26 16:57:56,412 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 16:57:56,412 | INFO     | agent.core | [AGENT] Response: 234 chars in 419.0ms
+2026-06-26 16:58:15,905 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-26 16:58:15,906 | INFO     | agent.planner | Loaded configuration...
+2026-06-26 16:58:17,597 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-26 16:58:17,597 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-26 16:58:17,597 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-26 16:58:18,221 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 16:58:18,222 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 16:58:18,222 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 16:58:18,222 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:58:18,222 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-26 16:58:18,225 | INFO     | agent.executor | [EXECUTOR] Finished in 3.0ms | tools=['get_order'] | errors=[]
+2026-06-26 16:58:18,225 | INFO     | agent.core | [AGENT] Response: 254 chars in 2322.4ms
+2026-06-26 16:58:18,229 | INFO     | agent.core | [AGENT] Question: 'Show me wireless headphones.'
+2026-06-26 16:58:18,631 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 16:58:18,632 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-26 16:58:18,632 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-26 16:58:18,632 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:58:18,632 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-26 16:58:18,633 | INFO     | agent.executor | [EXECUTOR] Finished in 1.1ms | tools=['search_products'] | errors=[]
+2026-06-26 16:58:18,634 | INFO     | agent.core | [AGENT] Response: 341 chars in 406.1ms
+2026-06-26 16:58:18,635 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes in ORD-1001?'
+2026-06-26 16:58:19,043 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 16:58:19,043 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-26 16:58:19,043 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-26 16:58:19,044 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 16:58:19,044 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-26 16:58:19,046 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:58:19,046 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-26 16:58:19,048 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 16:58:19,048 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-26 16:58:19,049 | INFO     | agent.executor | [EXECUTOR] Finished in 5.7ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-26 16:58:19,049 | INFO     | agent.core | [AGENT] Response: 726 chars in 415.2ms
+2026-06-26 16:58:19,052 | INFO     | agent.core | [AGENT] Question: 'Where is my PROD-102?'
+2026-06-26 16:58:19,341 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 16:58:19,341 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 16:58:19,341 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-102.
+2026-06-26 16:58:19,342 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 16:58:19,342 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-102')
+2026-06-26 16:58:19,344 | INFO     | agent.executor | [EXECUTOR] Finished in 2.0ms | tools=['get_product'] | errors=[]
+2026-06-26 16:58:19,344 | INFO     | agent.core | [AGENT] Response: 205 chars in 293.7ms
+2026-06-26 17:01:18,182 | INFO     | agent.planner | Loaded configuration...
+2026-06-26 17:01:19,067 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-26 17:01:19,067 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-26 17:01:19,067 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-26 17:01:32,846 | INFO     | agent.core | [AGENT] Question: 'where is my PROD-102'
+2026-06-26 17:01:33,530 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:01:33,533 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-26 17:01:33,535 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-102.
+2026-06-26 17:01:33,536 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 17:01:33,536 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-102')
+2026-06-26 17:01:33,558 | INFO     | agent.executor | [EXECUTOR] Finished in 22.5ms | tools=['get_product'] | errors=[]
+2026-06-26 17:01:33,559 | INFO     | agent.core | [AGENT] Response: 205 chars in 733.5ms
+2026-06-26 17:01:48,896 | INFO     | agent.core | [AGENT] Question: 'where is my PROD 102'
+2026-06-26 17:01:49,167 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:01:49,167 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 17:01:49,167 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 17:01:49,168 | INFO     | agent.core | [AGENT] Plan validation failed: 'I need your order ID to look that up. Could you share it? (e.g. ORD-1002)'
+2026-06-26 17:02:11,019 | INFO     | agent.core | [AGENT] Question: 'WHERE is my ORD 1002'
+2026-06-26 17:02:11,284 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:02:11,284 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 17:02:11,284 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 17:02:11,285 | INFO     | agent.core | [AGENT] Plan validation failed: 'I need your order ID to look that up. Could you share it? (e.g. ORD-1002)'
+2026-06-26 17:02:20,183 | INFO     | agent.core | [AGENT] Question: 'WHERE is my ORD 1002'
+2026-06-26 17:02:20,466 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:02:20,468 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 17:02:20,470 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 17:02:20,471 | INFO     | agent.core | [AGENT] Plan validation failed: 'I need your order ID to look that up. Could you share it? (e.g. ORD-1002)'
+2026-06-26 17:02:30,400 | INFO     | agent.core | [AGENT] Question: 'WHERE is my ORD-1002'
+2026-06-26 17:02:30,645 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:02:30,646 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-26 17:02:30,647 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-26 17:02:30,647 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 17:02:30,648 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-26 17:02:30,653 | INFO     | agent.executor | [EXECUTOR] Finished in 5.4ms | tools=['get_order'] | errors=[]
+2026-06-26 17:02:30,653 | INFO     | agent.core | [AGENT] Response: 254 chars in 264.0ms
+2026-06-26 17:21:33,750 | INFO     | agent.core | [AGENT] Question: 'hi'
+2026-06-26 17:21:34,130 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:21:34,133 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-26 17:21:34,135 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-26 17:21:34,137 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-26 17:21:34,137 | INFO     | agent.core | [AGENT] Response: 234 chars in 421.2ms
+2026-06-26 17:21:49,553 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes in my order ORD-1003'
+2026-06-26 17:21:49,769 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:21:49,770 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-26 17:21:49,771 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-26 17:21:49,772 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 17:21:49,772 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1003')
+2026-06-26 17:21:49,832 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 17:21:49,835 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-102')
+2026-06-26 17:21:49,932 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 17:21:49,937 | INFO     | agent.tools | [TOOL] search_products(query='Clothing')
+2026-06-26 17:21:49,999 | INFO     | agent.executor | [EXECUTOR] Finished in 227.4ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-26 17:21:50,001 | INFO     | agent.core | [AGENT] Response: 415 chars in 477.2ms
+2026-06-26 17:21:57,750 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes in my order ORD-1001'
+2026-06-26 17:21:58,190 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-26 17:21:58,195 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-26 17:21:58,199 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-26 17:21:58,202 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-26 17:21:58,211 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-26 17:21:58,313 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-26 17:21:58,319 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-26 17:21:58,429 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-26 17:21:58,436 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-26 17:21:58,493 | INFO     | agent.executor | [EXECUTOR] Finished in 290.9ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-26 17:21:58,504 | INFO     | agent.core | [AGENT] Response: 726 chars in 786.4ms
+2026-06-28 08:07:55,005 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-1002?'
+2026-06-28 08:07:55,005 | INFO     | agent.planner | Loaded configuration...
+2026-06-28 08:07:57,023 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-28 08:07:57,023 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-28 08:07:57,023 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-28 08:07:58,167 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:07:58,169 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:07:58,169 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:07:58,169 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:07:58,169 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:07:58,171 | INFO     | agent.executor | [EXECUTOR] Finished in 1.8ms | tools=['get_order'] | errors=[]
+2026-06-28 08:07:58,171 | INFO     | agent.core | [AGENT] Response: 254 chars in 3207.8ms
+2026-06-28 08:07:58,173 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-28 08:07:58,478 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:07:58,479 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:07:58,480 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-28 08:07:58,480 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:07:58,481 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:07:58,484 | INFO     | agent.executor | [EXECUTOR] Finished in 3.8ms | tools=['get_product'] | errors=[]
+2026-06-28 08:07:58,484 | INFO     | agent.core | [AGENT] Response: 204 chars in 312.7ms
+2026-06-28 08:07:58,488 | INFO     | agent.core | [AGENT] Question: 'Show me running shoes'
+2026-06-28 08:07:58,735 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:07:58,736 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:07:58,736 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:07:58,736 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:07:58,736 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-28 08:07:58,737 | INFO     | agent.executor | [EXECUTOR] Finished in 0.9ms | tools=['search_products'] | errors=[]
+2026-06-28 08:07:58,737 | INFO     | agent.core | [AGENT] Response: 488 chars in 250.0ms
+2026-06-28 08:07:58,739 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-1002?'
+2026-06-28 08:07:59,045 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:07:59,045 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:07:59,045 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:07:59,045 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:07:59,046 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:07:59,048 | INFO     | agent.executor | [EXECUTOR] Finished in 2.0ms | tools=['get_order'] | errors=[]
+2026-06-28 08:07:59,048 | INFO     | agent.core | [AGENT] Response: 254 chars in 309.7ms
+2026-06-28 08:07:59,051 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-9999?'
+2026-06-28 08:07:59,324 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:07:59,325 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:07:59,325 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:07:59,325 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:07:59,325 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-9999')
+2026-06-28 08:07:59,327 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-9999'. Please check the order ID and try again."
+2026-06-28 08:07:59,327 | INFO     | agent.executor | [EXECUTOR] Finished in 1.7ms | tools=['get_order'] | errors=["No order found with ID 'ORD-9999'. Please check the order ID and try again."]
+2026-06-28 08:07:59,327 | INFO     | agent.core | [AGENT] Response: 234 chars in 277.5ms
+2026-06-28 08:07:59,329 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-28 08:07:59,640 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:07:59,641 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:07:59,641 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-28 08:07:59,641 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:07:59,642 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:07:59,643 | INFO     | agent.executor | [EXECUTOR] Finished in 1.0ms | tools=['get_product'] | errors=[]
+2026-06-28 08:07:59,643 | INFO     | agent.core | [AGENT] Response: 204 chars in 314.9ms
+2026-06-28 08:07:59,644 | INFO     | agent.core | [AGENT] Question: 'Find running shoes'
+2026-06-28 08:07:59,958 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:07:59,959 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:07:59,960 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:07:59,960 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:07:59,960 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-28 08:07:59,962 | INFO     | agent.executor | [EXECUTOR] Finished in 2.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:07:59,962 | INFO     | agent.core | [AGENT] Response: 488 chars in 318.3ms
+2026-06-28 08:07:59,964 | INFO     | agent.core | [AGENT] Question: 'Find affordable running shoes'
+2026-06-28 08:08:00,207 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:00,208 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:08:00,208 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:08:00,209 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:00,209 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-28 08:08:00,212 | INFO     | agent.executor | [EXECUTOR] Finished in 3.5ms | tools=['search_products'] | errors=[]
+2026-06-28 08:08:00,212 | INFO     | agent.core | [AGENT] Response: 488 chars in 248.9ms
+2026-06-28 08:08:00,215 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-28 08:08:00,714 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:00,714 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-28 08:08:00,715 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-28 08:08:00,715 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:00,715 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:08:00,716 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:08:00,716 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:08:00,717 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:00,717 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-28 08:08:00,718 | INFO     | agent.executor | [EXECUTOR] Finished in 3.6ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-28 08:08:00,718 | INFO     | agent.core | [AGENT] Response: 726 chars in 504.8ms
+2026-06-28 08:08:00,721 | INFO     | agent.core | [AGENT] Question: 'Find quantum teleportation laptop'
+2026-06-28 08:08:01,110 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:01,110 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:08:01,110 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:08:01,110 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:01,111 | INFO     | agent.tools | [TOOL] search_products(query='quantum teleportation laptop')
+2026-06-28 08:08:01,112 | INFO     | agent.executor | [EXECUTOR] Finished in 1.8ms | tools=['search_products'] | errors=[]
+2026-06-28 08:08:01,112 | INFO     | agent.core | [AGENT] Response: 323 chars in 392.8ms
+2026-06-28 08:08:01,114 | INFO     | agent.core | [AGENT] Question: 'Hello, can you help me?'
+2026-06-28 08:08:01,521 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:01,522 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-28 08:08:01,522 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-28 08:08:01,523 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-28 08:08:01,523 | INFO     | agent.core | [AGENT] Response: 234 chars in 409.3ms
+2026-06-28 08:08:01,525 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-99999?'
+2026-06-28 08:08:01,724 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:01,725 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:08:01,725 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:08:01,725 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:01,725 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-99999')
+2026-06-28 08:08:01,726 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-99999'. Please check the order ID and try again."
+2026-06-28 08:08:01,726 | INFO     | agent.executor | [EXECUTOR] Finished in 1.2ms | tools=['get_order'] | errors=["No order found with ID 'ORD-99999'. Please check the order ID and try again."]
+2026-06-28 08:08:01,726 | INFO     | agent.core | [AGENT] Response: 235 chars in 202.0ms
+2026-06-28 08:08:01,728 | INFO     | agent.core | [AGENT] Question: 'Tell me about PROD-99999'
+2026-06-28 08:08:02,305 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:02,306 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:08:02,307 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-99999.
+2026-06-28 08:08:02,308 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:08:02,308 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-99999')
+2026-06-28 08:08:02,310 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No product found with ID 'PROD-99999'."
+2026-06-28 08:08:02,310 | INFO     | agent.executor | [EXECUTOR] Finished in 2.2ms | tools=['get_product'] | errors=["No product found with ID 'PROD-99999'."]
+2026-06-28 08:08:02,310 | INFO     | agent.core | [AGENT] Response: 197 chars in 582.6ms
+2026-06-28 08:08:02,312 | INFO     | agent.core | [AGENT] Question: 'Find headphones'
+2026-06-28 08:08:02,527 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:02,528 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:08:02,528 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:08:02,528 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:02,528 | INFO     | agent.tools | [TOOL] search_products(query='headphones')
+2026-06-28 08:08:02,529 | INFO     | agent.executor | [EXECUTOR] Finished in 1.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:08:02,529 | INFO     | agent.core | [AGENT] Response: 640 chars in 218.4ms
+2026-06-28 08:08:02,531 | INFO     | agent.core | [AGENT] Question: 'Find laptops'
+2026-06-28 08:08:02,856 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:02,857 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:08:02,857 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:08:02,857 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:02,857 | INFO     | agent.tools | [TOOL] search_products(query='laptops')
+2026-06-28 08:08:02,860 | INFO     | agent.executor | [EXECUTOR] Finished in 2.8ms | tools=['search_products'] | errors=[]
+2026-06-28 08:08:02,860 | INFO     | agent.core | [AGENT] Response: 302 chars in 329.7ms
+2026-06-28 08:08:02,863 | INFO     | agent.core | [AGENT] Question: 'Where is ORD-1001'
+2026-06-28 08:08:03,166 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:03,167 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:08:03,167 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:08:03,167 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:03,167 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:08:03,168 | INFO     | agent.executor | [EXECUTOR] Finished in 1.5ms | tools=['get_order'] | errors=[]
+2026-06-28 08:08:03,168 | INFO     | agent.core | [AGENT] Response: 168 chars in 306.7ms
+2026-06-28 08:08:03,171 | INFO     | agent.core | [AGENT] Question: 'PROD-101'
+2026-06-28 08:08:03,355 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:03,368 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:08:03,368 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-101.
+2026-06-28 08:08:03,368 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:08:03,368 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-101')
+2026-06-28 08:08:03,370 | INFO     | agent.executor | [EXECUTOR] Finished in 1.4ms | tools=['get_product'] | errors=[]
+2026-06-28 08:08:03,370 | INFO     | agent.core | [AGENT] Response: 210 chars in 199.9ms
+2026-06-28 08:08:03,371 | INFO     | agent.core | [AGENT] Question: 'Help me'
+2026-06-28 08:08:03,706 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:03,706 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-28 08:08:03,706 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-28 08:08:03,707 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-28 08:08:03,707 | INFO     | agent.core | [AGENT] Response: 234 chars in 336.3ms
+2026-06-28 08:08:57,084 | INFO     | agent.planner | Loaded configuration...
+2026-06-28 08:08:57,909 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-28 08:08:57,909 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-28 08:08:57,909 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-28 08:08:57,912 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-28 08:08:58,254 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:58,254 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:08:58,255 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:08:58,255 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:58,255 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:08:58,256 | INFO     | agent.executor | [EXECUTOR] Finished in 1.7ms | tools=['get_order'] | errors=[]
+2026-06-28 08:08:58,257 | INFO     | agent.core | [AGENT] Response: 254 chars in 346.6ms
+2026-06-28 08:08:58,259 | INFO     | agent.core | [AGENT] Question: 'What is the status of ORD-1001?'
+2026-06-28 08:08:58,575 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:58,575 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:08:58,576 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:08:58,576 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:58,577 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:08:58,579 | INFO     | agent.executor | [EXECUTOR] Finished in 2.1ms | tools=['get_order'] | errors=[]
+2026-06-28 08:08:58,579 | INFO     | agent.core | [AGENT] Response: 168 chars in 320.3ms
+2026-06-28 08:08:58,581 | INFO     | agent.core | [AGENT] Question: 'Has my order ORD-1003 been shipped yet?'
+2026-06-28 08:08:58,773 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:58,774 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:08:58,774 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:08:58,775 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:58,775 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1003')
+2026-06-28 08:08:58,777 | INFO     | agent.executor | [EXECUTOR] Finished in 2.5ms | tools=['get_order'] | errors=[]
+2026-06-28 08:08:58,777 | INFO     | agent.core | [AGENT] Response: 200 chars in 197.3ms
+2026-06-28 08:08:58,779 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-28 08:08:59,089 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:59,089 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-28 08:08:59,089 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-28 08:08:59,089 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:59,090 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:08:59,091 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:08:59,091 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:08:59,092 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:59,092 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-28 08:08:59,093 | INFO     | agent.executor | [EXECUTOR] Finished in 3.8ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-28 08:08:59,093 | INFO     | agent.core | [AGENT] Response: 726 chars in 315.0ms
+2026-06-28 08:08:59,095 | INFO     | agent.core | [AGENT] Question: 'Can you suggest a budget-friendly alternative to what I bought in ORD-1002?'
+2026-06-28 08:08:59,294 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:59,295 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-28 08:08:59,295 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-28 08:08:59,295 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:08:59,295 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:08:59,296 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:08:59,296 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-305')
+2026-06-28 08:08:59,297 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:59,297 | INFO     | agent.tools | [TOOL] search_products(query='Electronics')
+2026-06-28 08:08:59,298 | INFO     | agent.executor | [EXECUTOR] Finished in 3.1ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-28 08:08:59,298 | INFO     | agent.core | [AGENT] Response: 831 chars in 203.7ms
+2026-06-28 08:08:59,300 | INFO     | agent.core | [AGENT] Question: 'Show me some wireless headphones'
+2026-06-28 08:08:59,602 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:59,603 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:08:59,603 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:08:59,603 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:59,603 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-28 08:08:59,604 | INFO     | agent.executor | [EXECUTOR] Finished in 1.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:08:59,605 | INFO     | agent.core | [AGENT] Response: 341 chars in 305.5ms
+2026-06-28 08:08:59,607 | INFO     | agent.core | [AGENT] Question: 'Find me affordable running shoes under budget'
+2026-06-28 08:08:59,791 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:08:59,791 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:08:59,791 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:08:59,792 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:08:59,792 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-28 08:08:59,793 | INFO     | agent.executor | [EXECUTOR] Finished in 1.3ms | tools=['search_products'] | errors=[]
+2026-06-28 08:08:59,793 | INFO     | agent.core | [AGENT] Response: 488 chars in 187.1ms
+2026-06-28 08:08:59,795 | INFO     | agent.core | [AGENT] Question: "I'm looking for jeans"
+2026-06-28 08:09:00,106 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:09:00,106 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:09:00,106 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:09:00,107 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:09:00,107 | INFO     | agent.tools | [TOOL] search_products(query='jeans')
+2026-06-28 08:09:00,108 | INFO     | agent.executor | [EXECUTOR] Finished in 1.3ms | tools=['search_products'] | errors=[]
+2026-06-28 08:09:00,108 | INFO     | agent.core | [AGENT] Response: 184 chars in 313.9ms
+2026-06-28 08:09:00,110 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-28 08:09:00,318 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:09:00,319 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:09:00,319 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-28 08:09:00,319 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:09:00,319 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:09:00,321 | INFO     | agent.executor | [EXECUTOR] Finished in 1.9ms | tools=['get_product'] | errors=[]
+2026-06-28 08:09:00,321 | INFO     | agent.core | [AGENT] Response: 204 chars in 211.9ms
+2026-06-28 08:09:00,323 | INFO     | agent.core | [AGENT] Question: 'Tell me about PROD-305'
+2026-06-28 08:09:00,594 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:09:00,594 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:09:00,594 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-305.
+2026-06-28 08:09:00,594 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:09:00,595 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-305')
+2026-06-28 08:09:00,596 | INFO     | agent.executor | [EXECUTOR] Finished in 1.1ms | tools=['get_product'] | errors=[]
+2026-06-28 08:09:00,596 | INFO     | agent.core | [AGENT] Response: 218 chars in 273.8ms
+2026-06-28 08:09:00,598 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-9999?'
+2026-06-28 08:09:00,813 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:09:00,814 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:09:00,814 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:09:00,814 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:09:00,815 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-9999')
+2026-06-28 08:09:00,817 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-9999'. Please check the order ID and try again."
+2026-06-28 08:09:00,817 | INFO     | agent.executor | [EXECUTOR] Finished in 2.8ms | tools=['get_order'] | errors=["No order found with ID 'ORD-9999'. Please check the order ID and try again."]
+2026-06-28 08:09:00,817 | INFO     | agent.core | [AGENT] Response: 234 chars in 220.3ms
+2026-06-28 08:09:00,820 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-0000'
+2026-06-28 08:09:01,081 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:09:01,082 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:09:01,082 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-0000.
+2026-06-28 08:09:01,082 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:09:01,083 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-0000')
+2026-06-28 08:09:01,086 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No product found with ID 'PROD-0000'."
+2026-06-28 08:09:01,086 | INFO     | agent.executor | [EXECUTOR] Finished in 4.0ms | tools=['get_product'] | errors=["No product found with ID 'PROD-0000'."]
+2026-06-28 08:09:01,087 | INFO     | agent.core | [AGENT] Response: 196 chars in 267.9ms
+2026-06-28 08:09:01,090 | INFO     | agent.core | [AGENT] Question: 'Hello, can you help me?'
+2026-06-28 08:09:01,316 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:09:01,317 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-28 08:09:01,318 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-28 08:09:01,318 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-28 08:09:01,318 | INFO     | agent.core | [AGENT] Response: 234 chars in 229.1ms
+2026-06-28 08:17:16,107 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:16,107 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-1002?'
+2026-06-28 08:17:16,107 | INFO     | agent.planner | Loaded configuration...
+2026-06-28 08:17:16,931 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-28 08:17:16,931 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-28 08:17:16,931 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-28 08:17:17,677 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:17,677 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:17,677 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:17,677 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:17,677 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:17:17,677 | INFO     | agent.tools | [TOOL] get_order -> ORD-1002 | status='In Transit'
+2026-06-28 08:17:17,677 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=[]
+2026-06-28 08:17:17,677 | INFO     | agent.core | [AGENT] Response: 253 chars in 1570.2ms
+2026-06-28 08:17:17,677 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:17,677 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:17,677 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-28 08:17:18,164 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:18,164 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:17:18,164 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-28 08:17:18,164 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:18,164 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:17:18,165 | INFO     | agent.tools | [TOOL] get_product -> Nike Air Max 270 | Rs. 8999
+2026-06-28 08:17:18,165 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_product'] | errors=[]
+2026-06-28 08:17:18,165 | INFO     | agent.core | [AGENT] Response: 200 chars in 487.6ms
+2026-06-28 08:17:18,165 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:18,165 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:18,165 | INFO     | agent.core | [AGENT] Question: 'Show me running shoes'
+2026-06-28 08:17:18,472 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:18,473 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:18,473 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:18,473 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:18,473 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-28 08:17:18,473 | INFO     | agent.tools | [TOOL] search_products -> 3 result(s) for 'running shoes'
+2026-06-28 08:17:18,473 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:18,473 | INFO     | agent.core | [AGENT] Response: 510 chars in 308.3ms
+2026-06-28 08:17:18,473 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:18,473 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:18,473 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-1002?'
+2026-06-28 08:17:18,746 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:18,746 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:18,746 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:18,746 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:18,746 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:17:18,746 | INFO     | agent.tools | [TOOL] get_order -> ORD-1002 | status='In Transit'
+2026-06-28 08:17:18,746 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=[]
+2026-06-28 08:17:18,746 | INFO     | agent.core | [AGENT] Response: 253 chars in 273.4ms
+2026-06-28 08:17:18,746 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:18,747 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:18,747 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-9999?'
+2026-06-28 08:17:19,049 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:19,049 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:19,049 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:19,049 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:19,049 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-9999')
+2026-06-28 08:17:19,049 | WARNING  | agent.tools | [TOOL] get_order -> not found: 'ORD-9999'
+2026-06-28 08:17:19,049 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-9999'. Please check the order ID and try again."
+2026-06-28 08:17:19,049 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=["No order found with ID 'ORD-9999'. Please check the order ID and try again."]
+2026-06-28 08:17:19,049 | INFO     | agent.core | [AGENT] Response: 240 chars in 302.5ms
+2026-06-28 08:17:19,049 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,049 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,049 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-28 08:17:19,378 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:19,379 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:17:19,379 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-28 08:17:19,379 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:19,379 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:17:19,379 | INFO     | agent.tools | [TOOL] get_product -> Nike Air Max 270 | Rs. 8999
+2026-06-28 08:17:19,379 | INFO     | agent.executor | [EXECUTOR] Finished in 0.2ms | tools=['get_product'] | errors=[]
+2026-06-28 08:17:19,379 | INFO     | agent.core | [AGENT] Response: 200 chars in 329.8ms
+2026-06-28 08:17:19,379 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,379 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,379 | INFO     | agent.core | [AGENT] Question: 'Find running shoes'
+2026-06-28 08:17:19,713 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:19,713 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:19,713 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:19,713 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:19,713 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-28 08:17:19,713 | INFO     | agent.tools | [TOOL] search_products -> 3 result(s) for 'running shoes'
+2026-06-28 08:17:19,713 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:19,713 | INFO     | agent.core | [AGENT] Response: 510 chars in 334.2ms
+2026-06-28 08:17:19,713 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,713 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,713 | INFO     | agent.core | [AGENT] Question: 'Find affordable running shoes'
+2026-06-28 08:17:19,976 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:19,976 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:19,976 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:19,977 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:19,977 | INFO     | agent.tools | [TOOL] search_products(query='running shoes')
+2026-06-28 08:17:19,977 | INFO     | agent.tools | [TOOL] search_products -> 3 result(s) for 'running shoes'
+2026-06-28 08:17:19,977 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:19,977 | INFO     | agent.core | [AGENT] Response: 510 chars in 263.4ms
+2026-06-28 08:17:19,977 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,977 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:19,977 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-28 08:17:20,282 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:20,283 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-28 08:17:20,283 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-28 08:17:20,283 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:20,283 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:17:20,283 | INFO     | agent.tools | [TOOL] get_order -> ORD-1001 | status='Delivered'
+2026-06-28 08:17:20,283 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:20,283 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:17:20,283 | INFO     | agent.tools | [TOOL] get_product -> Nike Air Max 270 | Rs. 8999
+2026-06-28 08:17:20,283 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:20,283 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-28 08:17:20,283 | INFO     | agent.tools | [TOOL] search_products -> 5 result(s) for 'Footwear'
+2026-06-28 08:17:20,283 | INFO     | agent.executor | [EXECUTOR] Finished in 0.2ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-28 08:17:20,283 | INFO     | agent.core | [AGENT] Response: 750 chars in 306.4ms
+2026-06-28 08:17:20,283 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:20,283 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:20,283 | INFO     | agent.core | [AGENT] Question: 'Find quantum teleportation laptop'
+2026-06-28 08:17:20,505 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:20,505 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:20,505 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:20,505 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:20,505 | INFO     | agent.tools | [TOOL] search_products(query='quantum teleportation laptop')
+2026-06-28 08:17:20,505 | INFO     | agent.tools | [TOOL] search_products -> 0 result(s) for 'quantum teleportation laptop'
+2026-06-28 08:17:20,505 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:20,505 | INFO     | agent.core | [AGENT] Response: 321 chars in 222.4ms
+2026-06-28 08:17:20,505 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:20,506 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:20,506 | INFO     | agent.core | [AGENT] Question: 'Hello, can you help me?'
+2026-06-28 08:17:20,893 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:20,893 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-28 08:17:20,893 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-28 08:17:20,893 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-28 08:17:20,893 | INFO     | agent.core | [AGENT] Response: 240 chars in 387.9ms
+2026-06-28 08:17:20,893 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:20,893 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:20,893 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-99999?'
+2026-06-28 08:17:21,075 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:21,075 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:21,075 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:21,075 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:21,075 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-99999')
+2026-06-28 08:17:21,075 | WARNING  | agent.tools | [TOOL] get_order -> not found: 'ORD-99999'
+2026-06-28 08:17:21,075 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-99999'. Please check the order ID and try again."
+2026-06-28 08:17:21,075 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=["No order found with ID 'ORD-99999'. Please check the order ID and try again."]
+2026-06-28 08:17:21,075 | INFO     | agent.core | [AGENT] Response: 241 chars in 181.7ms
+2026-06-28 08:17:21,075 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:21,075 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:21,075 | INFO     | agent.core | [AGENT] Question: 'Tell me about PROD-99999'
+2026-06-28 08:17:21,481 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:21,481 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:17:21,481 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-99999.
+2026-06-28 08:17:21,481 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:21,481 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-99999')
+2026-06-28 08:17:21,481 | WARNING  | agent.tools | [TOOL] get_product -> not found: 'PROD-99999'
+2026-06-28 08:17:21,481 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No product found with ID 'PROD-99999'."
+2026-06-28 08:17:21,481 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_product'] | errors=["No product found with ID 'PROD-99999'."]
+2026-06-28 08:17:21,481 | INFO     | agent.core | [AGENT] Response: 203 chars in 405.9ms
+2026-06-28 08:17:21,481 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:21,481 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:21,481 | INFO     | agent.core | [AGENT] Question: 'Find headphones'
+2026-06-28 08:17:21,709 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:21,709 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:21,709 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:21,709 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:21,709 | INFO     | agent.tools | [TOOL] search_products(query='headphones')
+2026-06-28 08:17:21,709 | INFO     | agent.tools | [TOOL] search_products -> 4 result(s) for 'headphones'
+2026-06-28 08:17:21,709 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:21,709 | INFO     | agent.core | [AGENT] Response: 670 chars in 227.8ms
+2026-06-28 08:17:21,709 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:21,709 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:21,709 | INFO     | agent.core | [AGENT] Question: 'Find laptops'
+2026-06-28 08:17:22,055 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:22,055 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:22,055 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:22,055 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:22,055 | INFO     | agent.tools | [TOOL] search_products(query='laptops')
+2026-06-28 08:17:22,055 | INFO     | agent.tools | [TOOL] search_products -> 0 result(s) for 'laptops'
+2026-06-28 08:17:22,055 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:22,055 | INFO     | agent.core | [AGENT] Response: 300 chars in 345.9ms
+2026-06-28 08:17:22,055 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:22,055 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:22,055 | INFO     | agent.core | [AGENT] Question: 'Where is ORD-1001'
+2026-06-28 08:17:22,296 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:22,296 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:22,296 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:22,296 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:22,296 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:17:22,296 | INFO     | agent.tools | [TOOL] get_order -> ORD-1001 | status='Delivered'
+2026-06-28 08:17:22,296 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=[]
+2026-06-28 08:17:22,296 | INFO     | agent.core | [AGENT] Response: 167 chars in 241.4ms
+2026-06-28 08:17:22,296 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:22,296 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:22,296 | INFO     | agent.core | [AGENT] Question: 'PROD-101'
+2026-06-28 08:17:22,580 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:22,580 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:17:22,580 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-101.
+2026-06-28 08:17:22,580 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:22,580 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-101')
+2026-06-28 08:17:22,580 | INFO     | agent.tools | [TOOL] get_product -> Campus OG Running Shoes | Rs. 1299
+2026-06-28 08:17:22,580 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_product'] | errors=[]
+2026-06-28 08:17:22,580 | INFO     | agent.core | [AGENT] Response: 206 chars in 283.6ms
+2026-06-28 08:17:22,580 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:22,580 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:22,580 | INFO     | agent.core | [AGENT] Question: 'Help me'
+2026-06-28 08:17:22,913 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:22,913 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-28 08:17:22,913 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-28 08:17:22,913 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-28 08:17:22,913 | INFO     | agent.core | [AGENT] Response: 240 chars in 333.2ms
+2026-06-28 08:17:22,913 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:31,793 | INFO     | agent.planner | Loaded configuration...
+2026-06-28 08:17:32,612 | INFO     | agent.llm.gemini | [GEMINI] GeminiProvider initialised (gemini-1.5-flash).
+2026-06-28 08:17:32,612 | INFO     | agent.planner | Selected planner: GeminiProvider
+2026-06-28 08:17:32,612 | INFO     | agent.planner | Gemini initialized successfully.
+2026-06-28 08:17:32,612 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:32,612 | INFO     | agent.core | [AGENT] Question: 'Where is my order ORD-1002?'
+2026-06-28 08:17:33,283 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:33,283 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:33,283 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:33,283 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:33,284 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:17:33,284 | INFO     | agent.tools | [TOOL] get_order -> ORD-1002 | status='In Transit'
+2026-06-28 08:17:33,284 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=[]
+2026-06-28 08:17:33,284 | INFO     | agent.core | [AGENT] Response: 253 chars in 671.3ms
+2026-06-28 08:17:33,284 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:33,284 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:33,284 | INFO     | agent.core | [AGENT] Question: 'What is the status of ORD-1001?'
+2026-06-28 08:17:33,590 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:33,591 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:33,591 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:33,591 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:33,591 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:17:33,591 | INFO     | agent.tools | [TOOL] get_order -> ORD-1001 | status='Delivered'
+2026-06-28 08:17:33,591 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=[]
+2026-06-28 08:17:33,591 | INFO     | agent.core | [AGENT] Response: 167 chars in 307.3ms
+2026-06-28 08:17:33,591 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:33,591 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:33,591 | INFO     | agent.core | [AGENT] Question: 'Where is order ORD-9999?'
+2026-06-28 08:17:33,900 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:33,900 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:33,900 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:33,900 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:33,900 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-9999')
+2026-06-28 08:17:33,900 | WARNING  | agent.tools | [TOOL] get_order -> not found: 'ORD-9999'
+2026-06-28 08:17:33,900 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No order found with ID 'ORD-9999'. Please check the order ID and try again."
+2026-06-28 08:17:33,900 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=["No order found with ID 'ORD-9999'. Please check the order ID and try again."]
+2026-06-28 08:17:33,900 | INFO     | agent.core | [AGENT] Response: 240 chars in 309.5ms
+2026-06-28 08:17:33,901 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:33,901 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:33,901 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-201'
+2026-06-28 08:17:34,223 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:34,223 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:17:34,223 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-201.
+2026-06-28 08:17:34,223 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:34,223 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:17:34,223 | INFO     | agent.tools | [TOOL] get_product -> Nike Air Max 270 | Rs. 8999
+2026-06-28 08:17:34,223 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_product'] | errors=[]
+2026-06-28 08:17:34,223 | INFO     | agent.core | [AGENT] Response: 200 chars in 322.7ms
+2026-06-28 08:17:34,223 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:34,223 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:34,223 | INFO     | agent.core | [AGENT] Question: 'Tell me about PROD-305'
+2026-06-28 08:17:34,477 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:34,478 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:17:34,478 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-305.
+2026-06-28 08:17:34,478 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:34,478 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-305')
+2026-06-28 08:17:34,478 | INFO     | agent.tools | [TOOL] get_product -> Sony WH-1000XM5 Headphones | Rs. 24999
+2026-06-28 08:17:34,478 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_product'] | errors=[]
+2026-06-28 08:17:34,478 | INFO     | agent.core | [AGENT] Response: 214 chars in 254.4ms
+2026-06-28 08:17:34,478 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:34,478 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:34,478 | INFO     | agent.core | [AGENT] Question: 'Get details for PROD-0000'
+2026-06-28 08:17:34,881 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:34,881 | INFO     | agent.core | [AGENT] Plan  : intent='product_detail' | confidence=1.00 | tools=['get_product']
+2026-06-28 08:17:34,881 | INFO     | agent.core | [AGENT] Reason: Direct product-ID lookup for PROD-0000.
+2026-06-28 08:17:34,881 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:34,881 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-0000')
+2026-06-28 08:17:34,881 | WARNING  | agent.tools | [TOOL] get_product -> not found: 'PROD-0000'
+2026-06-28 08:17:34,881 | WARNING  | agent.executor | [EXECUTOR] Error recorded: "No product found with ID 'PROD-0000'."
+2026-06-28 08:17:34,881 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_product'] | errors=["No product found with ID 'PROD-0000'."]
+2026-06-28 08:17:34,881 | INFO     | agent.core | [AGENT] Response: 202 chars in 403.4ms
+2026-06-28 08:17:34,881 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:34,881 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:34,881 | INFO     | agent.core | [AGENT] Question: 'Show me some wireless headphones'
+2026-06-28 08:17:35,064 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:35,065 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:35,065 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:35,065 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:35,065 | INFO     | agent.tools | [TOOL] search_products(query='wireless headphones')
+2026-06-28 08:17:35,065 | INFO     | agent.tools | [TOOL] search_products -> 2 result(s) for 'wireless headphones'
+2026-06-28 08:17:35,065 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:35,065 | INFO     | agent.core | [AGENT] Response: 355 chars in 184.2ms
+2026-06-28 08:17:35,066 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,066 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,066 | INFO     | agent.core | [AGENT] Question: "I'm looking for jeans"
+2026-06-28 08:17:35,389 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:35,389 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:35,389 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:35,390 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:35,390 | INFO     | agent.tools | [TOOL] search_products(query='jeans')
+2026-06-28 08:17:35,390 | INFO     | agent.tools | [TOOL] search_products -> 1 result(s) for 'jeans'
+2026-06-28 08:17:35,390 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:35,390 | INFO     | agent.core | [AGENT] Response: 190 chars in 324.1ms
+2026-06-28 08:17:35,390 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,390 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,390 | INFO     | agent.core | [AGENT] Question: 'Find quantum teleportation laptop'
+2026-06-28 08:17:35,579 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:35,580 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:35,580 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:35,580 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:35,580 | INFO     | agent.tools | [TOOL] search_products(query='quantum teleportation laptop')
+2026-06-28 08:17:35,580 | INFO     | agent.tools | [TOOL] search_products -> 0 result(s) for 'quantum teleportation laptop'
+2026-06-28 08:17:35,580 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:35,580 | INFO     | agent.core | [AGENT] Response: 321 chars in 190.1ms
+2026-06-28 08:17:35,580 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,580 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,580 | INFO     | agent.core | [AGENT] Question: 'Is there a cheaper alternative to the shoes I ordered in ORD-1001?'
+2026-06-28 08:17:35,967 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:35,967 | INFO     | agent.core | [AGENT] Plan  : intent='cheaper_alternative' | confidence=0.90 | tools=['get_order', 'get_product', 'search_products']
+2026-06-28 08:17:35,967 | INFO     | agent.core | [AGENT] Reason: Explicit alternative phrase detected with order ownership context.
+2026-06-28 08:17:35,967 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:35,967 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1001')
+2026-06-28 08:17:35,967 | INFO     | agent.tools | [TOOL] get_order -> ORD-1001 | status='Delivered'
+2026-06-28 08:17:35,967 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_product'
+2026-06-28 08:17:35,967 | INFO     | agent.tools | [TOOL] get_product(product_id='PROD-201')
+2026-06-28 08:17:35,967 | INFO     | agent.tools | [TOOL] get_product -> Nike Air Max 270 | Rs. 8999
+2026-06-28 08:17:35,967 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:35,967 | INFO     | agent.tools | [TOOL] search_products(query='Footwear')
+2026-06-28 08:17:35,967 | INFO     | agent.tools | [TOOL] search_products -> 5 result(s) for 'Footwear'
+2026-06-28 08:17:35,967 | INFO     | agent.executor | [EXECUTOR] Finished in 0.2ms | tools=['get_order', 'get_product', 'search_products'] | errors=[]
+2026-06-28 08:17:35,967 | INFO     | agent.core | [AGENT] Response: 750 chars in 387.0ms
+2026-06-28 08:17:35,967 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,967 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:35,967 | INFO     | agent.core | [AGENT] Question: 'Can you suggest a budget-friendly option for what I bought in ORD-1002?'
+2026-06-28 08:17:36,160 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:36,160 | INFO     | agent.core | [AGENT] Plan  : intent='order_status' | confidence=0.95 | tools=['get_order']
+2026-06-28 08:17:36,160 | INFO     | agent.core | [AGENT] Reason: Order keyword or order ID detected; fetching order status.
+2026-06-28 08:17:36,160 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'get_order'
+2026-06-28 08:17:36,160 | INFO     | agent.tools | [TOOL] get_order(order_id='ORD-1002')
+2026-06-28 08:17:36,160 | INFO     | agent.tools | [TOOL] get_order -> ORD-1002 | status='In Transit'
+2026-06-28 08:17:36,160 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['get_order'] | errors=[]
+2026-06-28 08:17:36,160 | INFO     | agent.core | [AGENT] Response: 253 chars in 193.3ms
+2026-06-28 08:17:36,160 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:36,160 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:36,160 | INFO     | agent.core | [AGENT] Question: 'Hello, can you help me?'
+2026-06-28 08:17:36,525 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:36,526 | INFO     | agent.core | [AGENT] Plan  : intent='unknown' | confidence=0.50 | tools=[]
+2026-06-28 08:17:36,526 | INFO     | agent.core | [AGENT] Reason: No recognisable intent found; returning fallback guidance.
+2026-06-28 08:17:36,526 | INFO     | agent.executor | [EXECUTOR] Finished in 0.0ms | tools=[] | errors=[]
+2026-06-28 08:17:36,526 | INFO     | agent.core | [AGENT] Response: 240 chars in 365.4ms
+2026-06-28 08:17:36,526 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:36,526 | INFO     | agent.core | ------------------------------------------------------------
+2026-06-28 08:17:36,526 | INFO     | agent.core | [AGENT] Question: 'What is the weather today?'
+2026-06-28 08:17:36,703 | WARNING  | agent.llm.gemini | [GEMINI] Planning failed (NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.). Falling back to DeterministicPlanner.
+2026-06-28 08:17:36,704 | INFO     | agent.core | [AGENT] Plan  : intent='product_search' | confidence=0.85 | tools=['search_products']
+2026-06-28 08:17:36,704 | INFO     | agent.core | [AGENT] Reason: Search keyword detected; performing product catalog search.
+2026-06-28 08:17:36,704 | INFO     | agent.executor | [EXECUTOR] Calling tool: 'search_products'
+2026-06-28 08:17:36,704 | INFO     | agent.tools | [TOOL] search_products(query='What is weather today')
+2026-06-28 08:17:36,704 | INFO     | agent.tools | [TOOL] search_products -> 0 result(s) for 'What is weather today'
+2026-06-28 08:17:36,704 | INFO     | agent.executor | [EXECUTOR] Finished in 0.1ms | tools=['search_products'] | errors=[]
+2026-06-28 08:17:36,704 | INFO     | agent.core | [AGENT] Response: 314 chars in 177.9ms
+2026-06-28 08:17:36,704 | INFO     | agent.core | ------------------------------------------------------------
